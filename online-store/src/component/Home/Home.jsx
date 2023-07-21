@@ -5,10 +5,10 @@ const Home = () => {
   return (
     <div className='hero'>
     <div className="card text-bg-dark">
-        <img src="../assets/Hero.jpg" className="card-img" alt="Background" height="550px"/>
+        <img src="../assets/hero1.jpg" className="card-img" alt="Background" height="550px"/>
         <div className="container">
-        <div className="card-img-overlay d-flex flex-column justify-content-center">
-        <h5 className="card-title display-3">NEW SEASON ARRIVALS</h5>
+        <div className="card-img-overlay d-flex flex-column ">
+        <h5 className="card-title display-3 ">NEW SEASON ARRIVALS</h5>
         <p className="card-text lead fs-2">
             CHECK OUT ALL THE TRENDS
         </p>
