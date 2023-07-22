@@ -2,69 +2,47 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Create A Folder Component Inside src
+ Component Folder have Cart, Checkout, Home, Navbar, Products Folder.
 
-In the project directory, you can run:
+## Nabar Page
+Nabar file (Navbar.jsx) include here, It have Home, Product  and Card 
+ 1. Home for Home.jsx.
+ 2. Product for Products.jsx.
+ 3. Card for card.jsx.
+ 
 
-### `npm start`
+ ## Home.jsx(Home Folder)
+  It inculde Home page which is dashboard of the project .This is first display for cilent or users.
+  Here are inculde Products.jsx which display all the product.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  ## Products .jsx (Product Folder)
+  This file is display all the products and it have search bar which we can search by there title or name.
+   all the product are get for https://fakeapistore.com which we fetch the data for get the products to fetch the data us react-axios.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ## product.jsx(Product Folder)
+   This file display one products which we click to see all details of that products (title, rate, discription, price ). 
+   this file help to AddToCart and go to Cart file which there are inculde to button ADDTOCART and CART.
 
-### `npm test`
+   ## cart.jsx(Cart Folder)
+   This file have product which we add into cart for shooping.
+   if we dnt want to product which we add then we can remove also. this cart have one button which we can checkout the product which we include into the cart.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ## Checkout.jsx(Checkout Folder)
+   This file is for billing which we shopping or addtocart.
+   Here are include all the product which we add to cart and total all the product price for checkout .
+   Uers or Client need to fill the form for checkout.
 
-### `npm run build`
+   # Redux Folder 
+   Redux is state management which there are include  action and reducer folder 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ## Action Folder
+   Here are include add and del item 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ## Reducer Folder
+   Here are include  add add and del item for add the product and del the product into the cart .
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  **Note: Addition Information**
+  1. This all product is Function based Components.
+  2. Use JS Library (Axios, React-router-dom, Bootstrap, queryCilent, react-redux, font-awesome).
+  3. All the jsx file is routes in App.js.
