@@ -1,22 +1,22 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {useSelector} from 'react-redux'
 import { useDispatch } from 'react-redux'
-import {delCart,addCart} from '../../redux/action/index'
+import {delItem,addItem} from '../../redux/action/index'
 import { Link } from 'react-router-dom'
-import handleCart from '../../redux/reducer/handleCart'
+
 // import {fa fa}from 'font-awesome'
 
+
 const Cart = () => {
-    const state = useSelector((state)=> state.addCard)
+    const state = useSelector((state)=> state.handleCart)
     const dispatch = useDispatch()
 
+
     const handleClose = (item) => {
-        dispatch(delCart(item))
+        dispatch(delItem(item))
     }
     
-    // const handleBtn = (item) => {
-    //     dispatch(addCart(item))
-    // }
+    
     const cartItems = (product) => {
         return(
             <div className="px-4 my-5 bg-light rounded-3" key={product.id}>
@@ -24,7 +24,7 @@ const Cart = () => {
                     <button onClick={()=>handleClose(product)} className="btn-close float-end" aria-label="Close"></button>
                     <div className="row justify-content-center">
                         <div className="col-md-4">
-                            <img src={product.img} alt={product.title} height="200px" width="180px" />
+                            <img src={product.image} alt={product.title} height="200px" width="180px" />
                         </div>
                         <div className="col-md-4">
                             <h3>{product.title}</h3>
@@ -60,10 +60,9 @@ const Cart = () => {
 
     return(
         <>
-        {/* {cartItems()} */}
-          { emptyCart()}
-            {/* { state.map(handleCart)} */}
-            { button()}
+            {state.length === 0 && emptyCart()}
+            {state.length !== 0 && state.map(cartItems)}
+            {state.length !== 0 && button()}
         </>
     
     )

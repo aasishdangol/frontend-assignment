@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import {useDispatch} from 'react-redux'
-import { addCart } from '../../redux/action';
+import { addItem } from '../../redux/action';
 import { useParams, useNavigate } from 'react-router';
 import axios from 'axios'
-// import {Link} from 'react-router-dom'
+
 import Skeleton from 'react-loading-skeleton';
 
 
@@ -18,7 +18,7 @@ const Product = () => {
 
     const dispatch = useDispatch();
     const addProduct = (product) =>{
-        dispatch(addCart(product));
+        dispatch(addItem(product));
     }
 
     useEffect(() => {
@@ -39,13 +39,6 @@ const Product = () => {
          </div>
          <div className="col-md-6" style={{lineHeight:2}}>
             Loading....
-            {/* <Skeleton height={50} width={300} />
-            <Skeleton height={75}/>
-            <Skeleton height={25} width={150}/>
-            <Skeleton height={50}/>
-            <Skeleton height={150}/>
-            <Skeleton height={50} width={100}/>
-            <Skeleton height={50} width={100} style={{marginLeft:6}}/> */}
          </div>
             </>
         )

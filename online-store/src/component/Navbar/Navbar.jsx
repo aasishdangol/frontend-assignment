@@ -22,7 +22,9 @@ const Navbar = () => {
         </li>
       </ul>
     </div>
+    <Link to="/cart">
     <button className='btn btn-outline-dark' >Card({state.length})</button>
+    </Link>
   </div>
 </nav>
     </div>
